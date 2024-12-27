@@ -8,7 +8,7 @@ lauch onramp , when user call one-click-buy API, It takes users straight to the 
 
 ## Dependencies 
 
-- generate ProjectID , Secret API Key, API Key ID through [Getting Started with Onramp](#https://docs.cdp.coinbase.com/onramp/docs/getting-started)
+- generate ProjectID , Secret API Key, API Key ID through [Getting Started with Onramp](https://docs.cdp.coinbase.com/onramp/docs/getting-started)
 
 - Node.js (v18 or above)
 
