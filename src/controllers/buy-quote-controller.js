@@ -1,6 +1,4 @@
-const  axios =  require('axios');
 const {createRequest, fetchOnrampRequest, onrampLaunchRequest} = require('../utils/coinbase-onramp')
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 // export default async function useCryptoRampProviders(
 //   currency: string,

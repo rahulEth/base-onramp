@@ -7,7 +7,6 @@ const key_name = process.env.CDP_API_KEY_NAME;
 // const key_secret = key.api_key_secret
 const key_secret = process.env.CDP_API_KEY_PRIVATE_KEY
 
-console.log({key_name, key_secret})
 async function createRequest({
     request_method,
     request_path,
