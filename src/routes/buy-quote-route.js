@@ -7,5 +7,8 @@ router.post('/buyQuote/', validateParams, buyQuoteController.buyQuote);
 
 router.get('/lauchOnramp/', buyQuoteController.onrampLaunch);
 
+router.get('/supportedChains/', buyQuoteController.supprotedChains);
+
+
 
 module.exports = router;

@@ -3,8 +3,10 @@
 This project demonstrate coinbase onramp flow. Where user can pay in fiat via CARD, BANK Trasfer, crypo, Apple Pay, base account etc and get back crypto at destination crypto wallet address. Below Instructions are given to deposit USD via CARD and get back USDC in ethereum wallet address.
 
 I have implemented one-click-buy URL, where user first generate quoteId and use it to 
-lauch onramp , when user call one-click-buy API, It takes users straight to the preview screen (existing Coinbase users) or Apple Pay + debit card (Guest checkout).  
+lauch onramp, When user call one-click-buy API, It takes users straight to the preview screen (existing Coinbase users) or Apple Pay + debit card (Guest checkout).  
+User pay via CARD and get the USDC in ethereum wallet.
 
+It also supports multiple L1, L2's chains like arbitrum, base, polygon, solana,optimism, bitcoin, litecoin, ethereum classic etc 
 
 ## Dependencies 
 

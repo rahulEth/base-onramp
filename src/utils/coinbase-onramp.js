@@ -53,7 +53,7 @@ async function fetchOnrampRequest({
       .then(async (response) => {
         if (!response.ok) {
             const errorText = await response.text();
-            return res.status(500).send({
+            res.status(500).send({
               cause: {
                 status: response.status,
                 statusText: response.statusText,
@@ -71,7 +71,7 @@ async function fetchOnrampRequest({
       })
       .catch((error) => {
         console.error('Caught error: ', error);
-        return res.status(500).send(error)
+        res.status(500).send(error)
       });
   }
 
@@ -102,7 +102,7 @@ async function onrampLaunchRequest({
       })
       .then((json) => {
         //  return json;
-        res.status(200).send(json)
+        return res.status(200).send(json)
       })
       .catch((error) => {
         console.error('Caught error: ', error);
