@@ -67,7 +67,7 @@ async function fetchOnrampRequest({
       })
       .then((json) => {
         //  return json;
-        res.status(200).send(json)
+        res.status(200).send(JSON.stringify(json))
       })
       .catch((error) => {
         console.error('Caught error: ', error);
@@ -79,13 +79,11 @@ async function onrampLaunchRequest({
     request_method,
     url,
     res
-    }) {
-    console.log({url})    
+    }) { 
     return fetch(url, {
       method: request_method
     })
       .then(async (response) => {
-        console.log('response------- ', response)
         if (!response.ok) {
             const errorText = await response.text();
             return res.status(500).send({
@@ -97,12 +95,11 @@ async function onrampLaunchRequest({
               message: `HTTP error! status: ${response.status}, message: ${errorText}`
             })
         }
-        // console.log("respinse------- ", response.json())
-        return response.json();
+        return response.text();
       })
-      .then((json) => {
+      .then((html) => {
         //  return json;
-        return res.status(200).send(json)
+         res.status(200).send(html)
       })
       .catch((error) => {
         console.error('Caught error: ', error);
